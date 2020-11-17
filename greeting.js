@@ -9,14 +9,14 @@ function saveName(text){
 function handleSubmit(event){
     event.preventDefault();
     const currentValue = input.value;
-    paint(currentValue);
+    paintgreeting(currentValue);
     saveName(currentValue);
 }
 function askName(){
     form.classList.add(SHOWING_CN);
     form.addEventListener("submit",handleSubmit);
 }
-function paint(text){
+function paintgreeting(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `Hello ${text}`;
@@ -26,7 +26,7 @@ function loadName(){
     if(currentUser === null){
         askName();
     }else{
-        paint(currentUser);
+        paintgreeting(currentUser);
     }
 }
 function init(){
