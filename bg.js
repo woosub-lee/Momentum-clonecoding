@@ -1,9 +1,9 @@
 const body = document.querySelector("body");
-const IMG_NUMBER = 2;
+const IMG_NUMBER = 4;
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `./Images/mac_desk${imgNumber}.jpg`;
+    image.src = `./Images/bgImage${imgNumber}.jpg`;
     image.classList.add("bgImage");
     body.prepend(image);
 }
