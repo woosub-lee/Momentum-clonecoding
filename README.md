@@ -8,3 +8,5 @@ Thanks to NomadCoders
 4. showing local name and temperature (OpenWeathermap)
 --------
 css will be modified.
+  
+All cloneoding projects are for learning purposes. 
